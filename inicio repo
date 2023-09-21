@@ -1,0 +1,48 @@
+        Scanner sc = new Scanner(System.in);
+        int arena3000Psi = 450;
+        int grava3000Psi = 500;
+        int cemento3000Psi = 250;
+        int arena4000Psi = 650;
+        int grava4000Psi = 700;
+        int cemento4000Psi = 450;
+        int arena5000Psi = 850;
+        int grava5000Psi = 750;
+        int cemento5000Psi = 650;
+        int arena6000Psi = 1050;
+        int grava6000Psi = 950;
+        int cemento6000Psi = 850;
+        int resistencias;
+        
+        do {            
+            
+        System.out.println("Este algoritmo solo trabaja con 4 resistencia en psi: 3000psi, 4000psi, 5000psi, 6000psi");
+        System.out.println("Ingrese el valor de la resistencia deseada");
+        resistencias = sc.nextInt();
+
+        switch (resistencias) {
+            case 3000:
+                System.out.println("Arena: " + arena3000Psi + "kg");
+                System.out.println("Grava: " + grava3000Psi + "kg");
+                System.out.println("Cemento: " + cemento3000Psi + "kg");
+                break;
+            case 4000:
+                System.out.println("Arena: " + arena4000Psi + "kg");
+                System.out.println("Grava: " + grava4000Psi + "kg");
+                System.out.println("Cemento: " + cemento4000Psi + "kg");
+                break;
+            case 5000:
+                System.out.println("Arena: " + arena5000Psi + "kg");
+                System.out.println("Grava: " + grava5000Psi + "kg");
+                System.out.println("Cemento: " + cemento5000Psi + "kg");
+                break;
+            case 6000:
+                System.out.println("Arena: " + arena6000Psi + "kg");
+                System.out.println("Grava: " + grava6000Psi + "kg");
+                System.out.println("Cemento: " + cemento6000Psi + "kg");
+                break;
+            default:
+                System.out.println("Datos erroneos");
+        }
+        } while (resistencias != 3000);
+    }
+}
